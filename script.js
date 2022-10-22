@@ -59,6 +59,8 @@ document.getElementById('add').addEventListener('click', () => {
     
     myLibrary.push(newBook);
     displayBook();
+
+    document.querySelector('.popup').style.display = 'none';
 })
 
 document.getElementById('add-book-btn').addEventListener('click', () => {
