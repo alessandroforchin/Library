@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e09c74f9ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header-section">
+        <div class="title-container">
+            <h1>Library</h1>
+            <input type="button" value="Log in">
+        </div>
+    </header>
+
+    <section class="add-book-section">
+        <div class="book-add-button">
+            <input type="button" value="+ Add book" id="add-book-btn">
+        </div>
+
+        <div class="popup">
+            <div class="popup-content">
+                <i class="fa-solid fa-xmark close"></i>
+                <div class="input-container">
+                    <div class="title-input">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="author-input">
+                        <label for="author">Author</label>
+                        <input type="text" id="author" name="author" required>
+                    </div>
+                    <div class="pages-input">
+                        <label for="pages">Pages</label>
+                        <input type="text" id="pages" name="pages" required>
+                    </div>
+                </div>
+                <div class="add-input">
+                    <input type="button" value="Add Book" id="add">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-displayed-section">
+        <div class="book-container"></div>
+    </section>
+
+    <footer class="footer-section">
+        <p>Copyright <span><i class="fa-solid fa-copyright"></i></span> 2022 <a href="https://github.com/alessandroforchin">alessandroforchin</a> <span><i class="fa-brands fa-github"></i></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
