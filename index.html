@@ -15,7 +15,37 @@
     <header class="header-section">
         <div class="title-container">
             <h1>Library</h1>
-            <input type="button" value="Log in">
+            <input type="button" value="Log in" id="login-btn">
+
+            <div class="form-popup">
+                <div class="form-popup-content">
+                    <form class="form-container">
+                        <div class="mail-input">
+                            <label for="mail">Email: </label>
+                            <input type="email" name="mail" id="mail" required>
+                        </div>
+                        <div class="country-input">
+                            <label for="country">Country: </label>
+                            <input type="text" name="country" id="country" required>
+                        </div>
+                        <div class="zip-input">
+                            <label for="zip">Zip Code: </label>
+                            <input type="number" name="zip" id="zip" required min="5">
+                        </div>
+                        <div class="pwd-input">
+                        <label for="pwd">Password: </label>
+                        <input type="password" name="pwd" id="pwd" required minlength="8">
+                        </div>
+                        <div class="pwd-conf-input">
+                            <label for="pwd">Confirm Password: </label>
+                            <input type="password" name="pwd-conf" id="pwd-conf" required minlength="8">
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+
         </div>
     </header>
 

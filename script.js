@@ -74,3 +74,33 @@ document.getElementById('add-book-btn').addEventListener('click', () => {
 document.querySelector('.close').addEventListener('click', () => {
     document.querySelector('.popup').style.display = 'none';
 })
+
+// Form logic
+document.getElementById('login-btn').addEventListener('click', () => {
+    document.querySelector('.form-popup').style.display = 'flex';
+})
+
+// document.getElementById('submit-btn').addEventListener('click', () => {
+//     document.querySelector('.form-popup').style.display = 'none';
+// })
+
+let email = document.getElementById('mail');
+let zipCode = document.getElementById('zip');
+
+email.addEventListener('input', (event) => {
+    if (email.validity.typeMismatch) {
+        email.setCustomValidity('I am expecting an email address!');
+        email.reportValidity();
+    } else {
+        email.setCustomValidity('');
+    }
+})
+
+zipCode.addEventListener('input', (event) => {
+    if (zipCode.validity.rangeUnderflow) {
+        zipCode.setCustomValidity('Please enter a correct Zip Code');
+        zipCode.reportValidity();
+    } else {
+        zipCode.setCustomValidity('');
+    }
+})

@@ -28,6 +28,7 @@ input[type='button'] {
 }
 
 input[type='button']:hover {
+    cursor: pointer;
     background-color: var(--light-black);
     color: var(--white);
     transition: all 0.1s ease-in-out;
@@ -48,6 +49,85 @@ input[type='button']:hover {
 
 .title-container h1 {
     color: var(--light-black);
+}
+
+/* Form Section */
+.form-popup {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-popup-content {
+    width: 500px;
+    height: 400px;
+    background-color: var(--white);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-popup-content > input[type='button'] {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container div {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.form-container input {
+    appearance: none;
+    width: 200px;
+    border: 0;
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    font-size: 17px;
+    color: var(--dark-grey);
+}
+
+.form-container input:invalid {
+    border: 1px solid #900;
+    background-color: #fdd;
+}
+
+.form-container input:valid {
+    border: 1px solid rgb(0, 153, 64);
+    background-color: rgb(222, 255, 221);
+}
+
+button {
+    color: var(--light-black);
+    background-color: var(--soft-grey);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--light-black);
+    color: var(--white);
+    transition: all 0.1s ease-in-out;
 }
 
 /* Add Book Section */
@@ -166,10 +246,12 @@ input[type='button']:hover {
 
 .read-btn:hover {
     background-color: var(--light-gray);
+    cursor: pointer;
     transition: all 0.1s ease-in-out;
 }
 
 .remove-btn:hover {
+    cursor: pointer;
     color: var(--white);
     background-color: rgb(199, 55, 55);
     transition: all 0.1s ease-in-out;
